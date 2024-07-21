@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Inicio de sesión</h1>
+    <form method="post">
+        <input type="text" name="username" placeholder="Ingresa tu nombre" required><br>
+        <input type="password" name="password" placeholder="Ingresa tu contraseña" required><br>
+        <input type="submit" value="Verificar">
+    </form>
+    <p>{{ message }}</p>
+</body>
+</html>
